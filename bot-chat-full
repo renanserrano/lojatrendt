@@ -1,0 +1,71 @@
+
+// Cliente pega o endereço da loja e baixa o app
+
+Welcome Screen: Renan, sou o bot da Trendt irei te ajudar no seu processo de visita a loja. Estou em desenvolvimento, se eu não puder te responder algo procure o @renanserrano. Para saber aonde a loja está clique aqui /lojatrendt
+
+	Bot: Hoje a loja está na (https://github.com/renanserrano/lojatrendt/blob/master/local_atual.txt) - você vem visitar hoje?
+		User: <NÃO>
+	Bot: Quando quiser vir, lembre de confirmar se ainda estaremos no mesmo local /lojatrendt
+		User: /lojatrendt
+	Bot: Hoje a loja está na (https://github.com/renanserrano/lojatrendt/blob/master/local_atual.txt) - você vem visitar hoje?
+		User: <SIM>
+
+			Bot: Te espero aqui, me avisa quando chegar!
+				User: Cheguei
+					Bot: A loja funciona assim: você entra e fecha o zíper pra provar a peça, a que está pendurada é (https://github.com/renanserrano/lojatrendt/blob/master/tamanho_disponivel.txt), se ela não for o seu tamanho eu te disponibilizo /outra, se você gostar dela me diz /gostei ou /não dessa vez.
+						User: </GOSTEI>
+							Bot: Pra eu liberar a sua peça preciso que você faça um checkout no site da Trendt utilizando o paypal ou pagseguro como forma de pagamento.
+							Bot: O processo leva 3 minutos: (https://github.com/renanserrano/lojatrendt/blob/master/link_checkout.txt)
+							Bot: Quando terminar o processo, me informe o código do pedido e email cadastrado no site que eu já te libero a peça =] ex: 1234 nome@email.com.br
+								User: 1313 RENAN
+									Bot: <VERIFICAR COMPRA> <VERIFICA EMAIL>
+									Bot: Não encontrei o pedido, tente novamente ou fala com o @renanserrano
+										User: 1364 RENAN
+											Bot: <VERIFICAR COMPRA> <VERIFICA EMAIL>
+											Bot: <PUXAR TAMANHO> <PUXAR PENDING OU AUTORIZADA OU PAID>
+											Bot: Você está dentro da bolha? Quando estiver, peça para eu /liberar
+												User: /liberar
+													Bot: Sua peça já está liberada, abra a porta que está sinalizada ;)
+													Bot: Por favor pode deixar a porta encostada.
+													Bot: Aproveite sua peça! Você pode devolver ela ou trocar, enviando um email para concierge@trendt.com.br =]
+						User: </OUTRA>
+							Bot: Pra eu liberar um outro tamanho, preciso que você faça um checkout no site da Trendt utilizando o paypal como forma de pagamento, isso é só uma garantia, seu cartão não será cobrado.
+							Bot: O processo leva 3 minutos: http://trendt.co/pannels
+							Bot: Quando terminar o processo, me informe o código do pedido e email cadastrado no site que eu já te libero a peça =] ex: 1234 nome@email.com.br
+								User: 1313 RENAN
+									Bot: <VERIFICAR COMPRA> <VERIFICA EMAIL>
+									Bot: Não encontrei o pedido, tente novamente ou fala com o @renanserrano	
+										User: 1364 RENAN
+											Bot: <VERIFICAR COMPRA> <VERIFICA EMAIL>
+											Bot: <PUXAR TAMANHO> <PUXAR PENDING OU AUTORIZADA OU PAID>
+											Bot: Você está dentro da bolha? Quando estiver, peça para eu /liberar
+												User: /liberar
+													Bot: Sua peça já está liberada, abra a porta que está sinalizada ;)
+													Bot: Me avise quando tiver /provado sua peça, se preferir você pode levar pra sua /casa, pra provar com calma e experimentar com outras peças do seu armário.
+														User: </CASA>
+															Bot: Aproveite! Você pode devolver ela ou trocar, enviando um email para concierge@trendt.com.br
+																User: </PROVADO>
+																	Bot: /Gostou da peça ou fica para a /próxima?
+																		User: </GOSTOU>
+																			Bot: Aproveite! Você pode devolver ela ou trocar, enviando um email para concierge@trendt.com.br =]
+																				User: </PROXIMA>
+																					Bot: Pra não te cobrar a peça, eu preciso de um favor, coloque ela de volta na gaveta, segure a tampa fechada e aperte /fechar
+																						User: /fechar
+																					Forwhile:
+																						Bot: Tem certeza que a porta fechou com a peça dentro? /sim /não
+																							User: <NÃO>
+																								Bot: /Destravar a porta novamente
+																									User: </DESTRAVAR>
+																										Bot: Tem certeza que a porta fechou com a peça dentro? /sim /não
+																											User: </SIM>
+																												Bot: No final do dia iremos conferir a peça devolvida e você receberá um email com cancelamento do pedido. Espero que a do mês seguinte você goste. Obrigado =]
+						User: </NÃO>
+							Bot: Obrigado por visitar! Mês que vêm tem outra ;)
+
+//<QUALQUER OUTRA PALAVRA QUE O user ESCREVER O BOT RESPONDE>
+Bot: Essa palavra ainda não está no meu dicionário, avise o @renanserrano por favor =]
+
+
+
+
+
