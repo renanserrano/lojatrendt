@@ -1,0 +1,13 @@
+ESP8266 - Arduino Uno
+Gnd			GND
+TX			RX
+
+
+Motor - Arduino - Fonte
+GND 	Gnd 		GND
+Sinal 	~35691011
+5V					5V
+
+
+1 kit 4 pilhas alcalinas ou 5 pilhas recarregável para os servos
+1 Power bank para o Arduino (porta android) e Esp (porta apple) USB		
