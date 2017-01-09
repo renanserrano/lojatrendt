@@ -17,3 +17,6 @@ Falta falar da grade, bolha, código do ESP, arduino, telegram e herokuapp
 - Precisa de uma alimentação paralela que pode ser um outro jogo de pilhas de 6V mas esse ligado direto a ele, sem passar pela protoboard
 
 (onsequel.com) faz bot rapidos mas não foi usado pra esse projeto, o bom dele é que conecta com FB messenger mas precisa de raspberri
+
+#Herokuapp
+- Sobe a pasta Middleware no deploy heroku php composer
